@@ -1,0 +1,12 @@
+.background{
+    width: 1024px;
+    height: 600px;
+    background-image: url('../images/background.png');
+}
+.outerbox{
+    width: 808px;
+    height: 544px;
+    background-image: url(../images/outerbox.png);
+    display: flex;
+    justify-content: center;
+}

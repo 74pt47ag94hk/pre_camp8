@@ -1,0 +1,46 @@
+var lot = new Array();
+lot[0] = Math.floor(Math.random()*45+1);
+for(i=1;i<6;i++) {
+  lot[i] = Math.floor(Math.random()*45+1);
+  for(j=i-1;j>=0;j--) {
+    if(lot[i] == lot[j]) {
+      i--;
+      break;
+    }
+  }
+}
+
+for(i=0;i<6;i++)     document.write(lot[i]+";");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+var lotto = []; 
+
+for(var i=0;i<6;i++){
+  var num = Math.floor(Math.random() * 44) + 1;
+
+  for(var j in lotto){
+    if(num == lotto[j]){ //현재 새로나온 숫자가 기존 숫자와 같으면
+      num = Math.floor(Math.random() * 44) + 1;
+    }
+  }
+
+  lotto.push(num);
+}
+
+lotto.sort(function(a,b){
+  return a - b;
+});
+
+console.log(lotto)

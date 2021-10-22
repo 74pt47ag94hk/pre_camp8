@@ -1,0 +1,16 @@
+* {
+  margin: 10px;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  width: 350px;
+  margin: 10px;
+  box-sizing: border-box;
+  border: 1px solid gray;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-items: space-between;
+  text-align: center;
+}

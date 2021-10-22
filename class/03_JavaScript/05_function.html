@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <title>인증번호 실습</title>
+    <script src="05_function.js">
+
+      //    function getToken(){
+      //         const token = String(Math.floor(Math.random()*1000000)).padStart(6, "0")
+      //         document.getElementById("num").innerText = token
+      //     }
+
+
+          // const getToken=()=>{
+          //     const token = String(Math.floor(Math.random()*1000000)).padStart(6, "0")
+          //     document.getElementById("num").innerText = token
+          // }
+          // function reset(){
+          //     document.getElementById("num").innerText = "000000"
+          // }
+    </script>
+  </head>
+  <body>
+    <div id="num">000000</div>
+    <button onclick="getToken()">인증번호 전송</button>
+    <button onclick="reset()">초기화</button>
+    <div><span>남은시간 : </span><span id="timer">03:00</span></div>
+  </body>
+</html>
